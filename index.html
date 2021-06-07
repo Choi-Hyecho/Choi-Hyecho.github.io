@@ -5,33 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/index.css"/>
+        <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./index.js"></script>
+        
         <title>오늘 나에게 가장 잘 맞는 술은?</title>
     </head>
 
     <body>
         <main>
             <div class="main_box">
-                <header>
-                    <div>
-                        <img id="logo_img" src="./image/images/logo.png"/>
-                    </div>                    
-                </header>
-                <div class="middle">
-                <img src="./image/images/img_08.png"></div>
-                <div class="btn_box">
-                    <div class="start_btn">
-                        <img src="./image/images/img_11.png">
-                        <img src="./image/images/img_11_hover.png">
+                <div class="container swiper-container mySwiper">
+                    <div class="item_list swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <header>
+                                <div>
+                                    <img id="logo_img" src="./image/images/logo.png"/>
+                                </div>                    
+                            </header>
+                            <div class="middle">
+                            <img src="./image/images/img_08.png"></div>
+                            <div class="btn_box">
+                                <div class="start_btn">
+                                    <img src="./image/images/img_11.png">
+                                    <img src="./image/images/img_11_hover.png">
+                                </div>
+                                <div class="share_btn">
+                                    <img src="./image/images/img_17.png">
+                                    <img src="./image/images/img_17_hover.png">
+                                </div>
+                                
+                            </div>
+                            <div class="copy">
+                                <img src="./image/images/img_87.png" /></div>
+                        </div> 
                     </div>
-                    <div class="share_btn">
-                        <img src="./image/images/img_17.png">
-                        <img src="./image/images/img_17_hover.png">
-                    </div>
-                    
+                    <div class="item swiper-slide">item2</div>
+                    <div class="item swiper-slide">item3</div>
                 </div>
-                <div class="copy">
-                    <img src="./image/images/img_87.png" /></div>
-            </div> 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
         </main>
     </body>
 </html>
