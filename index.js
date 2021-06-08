@@ -1,7 +1,6 @@
 
 var navi = document.getElementsByTagName('nav')[0]
 var swiper = new Swiper('.main_box', {
-    effect: 'flip',
     allowTouchMove: false,
     breakpointsInverse: true,
     breakpoints: {
