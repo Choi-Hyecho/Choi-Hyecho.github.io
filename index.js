@@ -1,6 +1,11 @@
 
 var navi = document.getElementsByTagName('nav')[0]
 var swiper = new Swiper('.main_box', {
+    speed : 500,
+    effect : 'fade',
+    fadeEffect: {
+        crossFade: true
+      },
     allowTouchMove: false,
     breakpointsInverse: true,
     breakpoints: {
