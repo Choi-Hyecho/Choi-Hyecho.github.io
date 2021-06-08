@@ -1,3 +1,4 @@
+
 var navi = document.getElementsByTagName('nav')[0]
 var swiper = new Swiper('.main_box', {
     effect: 'flip',
@@ -13,11 +14,12 @@ var swiper = new Swiper('.main_box', {
         prevEl: '.swiper-button-prev',
       },
     });
-
+var icon = document.getElementsByClassName('prog')[0].getElementsByTagName('img')[0]
 swiper.on('slideChange', function(){
     if(swiper.activeIndex === 0){
             navi.style.display = 'none';
         }
+
     })
 
 var start_btn = document.getElementsByClassName('start_btn')[0];
@@ -56,10 +58,3 @@ request.onload = function() {
      }
   }
 
-  var next_btn = document.getElementsByClassName('swiper-button-next')[0]
-  var icon = document.getElementsByClassName('prog')[0].getElementsByTagName('img')
-  console.log(icon)
-  var left = icon.style.left
-  next_btn.addEventListener('click', function () {
-    icon.style.left = left -20
-})

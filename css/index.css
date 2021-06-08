@@ -153,8 +153,8 @@ progress::-webkit-progress-value {
 }
 
 .prog img{
-    position: relative;
-    top: -33px;
-    left: -106px;
+    position: absolute;
+    top: 0;
 }
+
   
