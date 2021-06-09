@@ -1,6 +1,7 @@
 
 Kakao.init('f61d8da7a7592cf7832d8263a79eb5ce');
 Kakao.isInitialized();
+
 var navi = document.getElementsByTagName('nav')[0]
 var modal = document.getElementById('myModal');
 var swiper = new Swiper('.main_box', {
@@ -85,11 +86,12 @@ window.addEventListener('click', function(event) {
 });
 
 
-function sendCustom() {
+function sendLink() {
     Kakao.Link.sendCustom({
-        templateId: 594623 
-  })
-}
+      templateId: 54986,
+      templateArgs: {title: '오늘 나에게 가장 잘 맞는 술은?'}
+    })
+  }
 
   function copyToClipboard(val) {
     const t = document.createElement("textarea");
