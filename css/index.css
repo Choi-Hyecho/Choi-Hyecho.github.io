@@ -83,6 +83,7 @@ main{
 .select_btn_box{
     text-align: -webkit-center;
     position: relative;
+    padding-top: 25px;
 }
 .copy{
     position: relative;

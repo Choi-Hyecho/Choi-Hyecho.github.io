@@ -55,10 +55,9 @@ request.onload = function() {
         title.innerText = datalist.q_list[index].q_text
         a_list = datalist.q_list[index].a_list
         var btn_list = q_class.getElementsByClassName('select_btn_box')[0].getElementsByTagName('button')
-        console.log(btn_list)
-        // for (let j = 0; j < btn_list.length; index++) {
-        //     btn_list[j].innerText = a_list[j].text
-        // }
+        for (let j = 0; j < btn_list.length; j++) {
+            btn_list[j].innerText = a_list[j].text        
+        }
      }
   }
 
