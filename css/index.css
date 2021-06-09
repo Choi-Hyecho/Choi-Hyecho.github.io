@@ -78,6 +78,7 @@ main{
 .middle img{
     position: relative;
     left: -35px;
+    bottom: -1px;
 }
 .select_btn_box{
     text-align: -webkit-center;
