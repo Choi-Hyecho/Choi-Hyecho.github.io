@@ -1,3 +1,6 @@
+window.addEventListener('load', function () {
+    
+  })
 
 Kakao.init('f61d8da7a7592cf7832d8263a79eb5ce');
 Kakao.isInitialized();
