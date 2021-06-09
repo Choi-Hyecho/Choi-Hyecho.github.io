@@ -86,7 +86,7 @@ window.addEventListener('click', function(event) {
 
 
 function sendCustom() {
-    Kakao.Link.sendDefault({
+    Kakao.Link.sendCustom({
         templateId: 594623 
   })
 }
