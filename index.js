@@ -1,4 +1,6 @@
 
+Kakao.init('f61d8da7a7592cf7832d8263a79eb5ce');
+Kakao.isInitialized();
 var navi = document.getElementsByTagName('nav')[0]
 var modal = document.getElementById('myModal');
 var swiper = new Swiper('.main_box', {
@@ -118,4 +120,17 @@ function sendLink() {
         },
       ],
     })
+  }
+
+  function copyToClipboard(val) {
+    const t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = val;
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+  }
+  function copy() {
+    copyToClipboard('https://blissful-thompson-67c8f7.netlify.app/');
+    alert("복사 완료!")
   }

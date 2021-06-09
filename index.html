@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/index.css"/>
   <link rel="stylesheet" href="js/swiper/swiper.css">
-  
-
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v11.0" nonce="S4liXnDa"></script>
 </head>
 <body>
   <main>
@@ -203,9 +203,9 @@
                         </div>   
                         <div class="icon_list">
                             <img class="icon" id="kakao" onclick="sendLink()" src="./image/icon/kakako.png">
-                            <img class="icon" id="faceboox" src="./image/icon/facebook.png">
-                            <img class="icon" id="twitter" src="./image/icon/twitter.png">
-                            <img class="icon" id="copyurl" src="./image/icon/link.png">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblissful-thompson-67c8f7.netlify.app%2F&amp;src=sdkpreparse"><img class="icon" id="faceboox" data-href="https://blissful-thompson-67c8f7.netlify.app/"  src="./image/icon/facebook.png"></a>
+                            <a href="https://twitter.com/intent/tweet?text=오늘_나에게_가장_잘_맞는_술은$url=https%3A%2F%2Fblissful-thompson-67c8f7.netlify.app"><img class="icon" id="twitter" src="./image/icon/twitter.png"></a>
+                            <img class="icon" id="copyurl" onclick="copy()" src="./image/icon/link.png">
                         </div>
                     </div>
                 </div>
