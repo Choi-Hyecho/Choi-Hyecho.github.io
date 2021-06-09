@@ -1,5 +1,6 @@
 
 var navi = document.getElementsByTagName('nav')[0]
+var modal = document.getElementById('myModal');
 var swiper = new Swiper('.main_box', {
     speed : 500,
     effect : 'fade',
@@ -23,16 +24,15 @@ swiper.on('slideChange', function(){
     if(swiper.activeIndex === 0){
             navi.style.display = 'none';
         }
-
     })
 
 var start_btn = document.getElementsByClassName('start_btn')[0];
 
 start_btn.addEventListener('click', function () {
     swiper.slideNext();
+    modal.style.display = "none";
     navi.style.display = 'block';
 })
-
 
 var request = new XMLHttpRequest();
 
@@ -47,7 +47,7 @@ request.onload = function() {
     load_text(datalist)
   }
 
-  function load_text(datalist) {
+function load_text(datalist) {
     var q_class_list = document.getElementsByClassName('q')
      for (let index = 0; index < q_class_list.length; index++) {
         q_class = q_class_list[index]
@@ -59,5 +59,27 @@ request.onload = function() {
             btn_list[j].innerText = a_list[j].text        
         }
      }
-  }
+}
+
+
+var share_btn =  document.getElementsByClassName('share_btn')[0];
+
+
+share_btn.addEventListener('click', function() {
+    modal.style.display = 'block';
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByTagName("span")[0];                                          
+span.addEventListener('click',function() {
+    modal.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
 
