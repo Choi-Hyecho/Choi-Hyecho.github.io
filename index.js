@@ -85,9 +85,10 @@ window.addEventListener('click', function(event) {
 });
 
 
-function sendLink() {
-    Kakao.Link.sendDefault()
-  }
+function sendCustom() {
+    Kakao.Link.sendDefault({
+        templateId: {594623}
+  })
 
   function copyToClipboard(val) {
     const t = document.createElement("textarea");
