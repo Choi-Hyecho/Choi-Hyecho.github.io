@@ -83,3 +83,39 @@ window.addEventListener('click', function(event) {
 });
 
 
+function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '오늘 나에게 가장 잘 맞는 술은?',
+        description: '#테스트 #심리테스트 #주당 #19금 #MBTI',
+        imageUrl:
+          'https://blissful-thompson-67c8f7.netlify.app/image/images/logo.png',
+        link: {
+          mobileWebUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+          webUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+            webUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+            webUrl: 'https://blissful-thompson-67c8f7.netlify.app/',
+          },
+        },
+      ],
+    })
+  }
